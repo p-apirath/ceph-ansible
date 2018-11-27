@@ -200,7 +200,7 @@ def validate_osd_scenarios(value):
 
 def validate_objectstore(value):
     assert value in [
-        "filestore", "bluestore"], "objectstore must be set to 'filestore' or 'bluestore'"
+        "filestore", "bluestore"], "objectstore must be set to 'filestore' or 'bluestore', if you current cluster has filestore OSDs, you must add osd_objectstore='filestore' to each OSD host in your inventory."
 
 
 def validate_ceph_stable_release(value):
